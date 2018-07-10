@@ -1,4 +1,5 @@
 # vue-boilerplate-large-application
+<<<<<<< HEAD
 
 > Organize Vue.js Application and Make It Scale (life in vue js)
 
@@ -26,5 +27,5 @@ npm run e2e
 # run all tests
 npm test
 ```
+Organize Vue.js Application and Make It Scale (life in vue js)
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
