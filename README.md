@@ -1,5 +1,4 @@
 # vue-boilerplate-large-application
-
 > Organize Vue.js Application and Make It Scale (life in vue js)
 
 ## Build Setup
@@ -26,5 +25,4 @@ npm run e2e
 # run all tests
 npm test
 ```
-Organize Vue.js Application and Make It Scale (life in vue js)
 

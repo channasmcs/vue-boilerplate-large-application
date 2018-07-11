@@ -1,15 +1,26 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+
+// child routes
+import Home from '@/router/Home'
 
 Vue.use(Router)
+const DefaultRoute = []
 
+/**
+setup default route here
+example
+const DefaultRoute = [{
+  path: '/',
+  name: '',
+  component: ''
+}]
+ */
+
+const ChildRoute = DefaultRoute.concat(
+  Home
+)
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
-    }
-  ]
+  mode: 'history',
+  routes: ChildRoute
 })
