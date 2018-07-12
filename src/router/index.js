@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 // child routes
-import Home from '@/router/Home'
+import Home from '@/router/home'
 
 Vue.use(Router)
 const DefaultRoute = []
