@@ -16,6 +16,10 @@
     </div>
 </template>
 <script>
+/* 
+eslint-disable 
+*/
+import { postSampleAction, getSampleAction,	updateSampleAction,	deleteSampleAction } from '@/api/SampleAPI'
 import formInput from '@/components/UI/Input.vue'
 import formButton from '@/components/UI/Button.vue'
 export default {
@@ -31,7 +35,49 @@ export default {
     'app-form-button': formButton
   },
   methods: {
-    SubmitForm () {
+
+    SubmitForm () { 
+      postSampleAction(
+          this.formData,
+          response => {
+               // after POST sucess 
+          },
+          error => {
+              
+          }
+      )
+    },
+    Getdata(id) {
+      getSampleAction(
+        id,
+      response => {
+           // after GET sucess     
+      },
+        error => {}
+      )
+    },
+    update(id) {
+      updateSampleAction(
+        id,
+        this.formData,
+          (response) => {
+          this.load = false
+            // after PUT sucess
+        }, error => {
+
+        }
+      )
+    },
+    delete(id){
+      deleteSampleAction(
+        {id:id},
+        response => {
+           // after DELETE sucess   
+        },
+        error => {
+             
+        }
+      )
     }
   }
 }

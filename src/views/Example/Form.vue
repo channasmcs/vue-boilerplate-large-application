@@ -2,9 +2,13 @@
 
 </style>
 <template>
-    <section>
-        <app-example-form></app-example-form>
-    </section>
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+               <app-example-form style="padding: 74px;"></app-example-form>
+            </div>
+        </div>
+    </div>
 </template>
 <script>
 
