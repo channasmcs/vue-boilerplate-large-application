@@ -1,0 +1,1 @@
+# setup component mixin
